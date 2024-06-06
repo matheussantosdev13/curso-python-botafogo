@@ -1,0 +1,8 @@
+<script>
+decisao = confirm("clique eum um botao");
+if (decisao){
+    alert("você clicou no botão ok, \n +porque foi retornado o valor: "+decisao);
+} else {alert ("voce clicou no botao CANCELAR, \n"+"porque foi retornadoo valor:"+decisao);
+
+}
+</script>

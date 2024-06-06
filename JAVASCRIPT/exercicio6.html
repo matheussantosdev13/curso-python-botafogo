@@ -1,0 +1,44 @@
+<script>
+
+   var time1 = prompt("Digite o nome do Time 1:");
+   var time2 = prompt("Digite o nome do Time 2:");
+    
+   
+    var golsTime1 = parseInt(prompt("Quantos gols o ${time1} marcou?"), 10);
+    var golsTime2 = parseInt(prompt("Quantos gols o ${time2} marcou?"), 10);
+    
+    
+    var resultado;
+    if (golsTime1 > golsTime2) {
+        resultado = "Vitória do time1";
+    } else if (golsTime1 < golsTime2) {
+        resultado = "Vitória do time2";
+    } else {
+        resultado = "Empate";
+    }
+    
+    document.write(time1 + " " + golsTime1 + " X " + golsTime2 + " " +  time2 + "</br>");
+    document.write(resultado);
+
+</script>
+//
+<script>
+var time1, time2;
+var gols1, gols2;
+var resultado;
+
+time1 = prompt("Qual o nome do primeiro time? ", " ");
+golstime1 = parseInt(prompt("Quantos gols fez o " + time1 + " ? ", " "));
+time2 = prompt("Qual o nome do segundo time?", " ");
+golstime2 = parseInt(prompt("Quantos gols fez o " + time2 + " ? ", " "));
+
+if(golstime1 > golstime2){
+    resultado = "Vitoria do " + time1,
+} else if(golstime2 > golstime1){
+    resultado = "Vitoria do " + time2;
+} else {
+    resultado = " Empate ";
+}
+    document.write(time1 + " " + golsTime1 + " X " + golsTime2 + " " +  time2 + "</br>");
+    document.write(resultado);
+    </script>
