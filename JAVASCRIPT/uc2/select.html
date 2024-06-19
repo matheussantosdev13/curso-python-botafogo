@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Select</title>
+</head>
+<body>
+    <h2>Preferências de Contato</h2>
+    <form action="/submit-form" method="POST">
+        <label for="preferencias">Selecione suas preferências de contato:</label><br>
+        <select id="preferencias" name="preferencias">
+            <option value="email">Receber por Email</option>
+            <option value="telefone">Receber por Telefone</option>
+            <option value="correio">Receber por Correio</option>
+            <option value="whatsapp">Receber por WhatsApp</option>
+        </select><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+

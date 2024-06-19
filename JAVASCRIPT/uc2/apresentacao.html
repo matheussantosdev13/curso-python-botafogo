@@ -25,11 +25,22 @@
         p {
             color: #666;
         }
+        
+
     </style>
+    <script>
+        function emitirMensagem(){
+        document.write("<h1>Oi , sou uma mensagem</h1>");
+        }
+
+        function emitirAlerta(){
+        alert("Tecla digitada");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Apresentação de Matheus Santos da Silva</h1>
+        <h1>Apresentação</h1>
         <p>Nome: Matheus Santos da Silva</p>
         <p>Idade: 28 anos</p>
         <p>Localidade: Rio de Janeiro, Brasil</p>
@@ -39,6 +50,8 @@
         <p>Experiência: 7 anos trabalhando como desenvolvedor full-stack</p>
         <p>Projetos recentes: Desenvolvimento de um aplicativo mobile para gestão de finanças pessoais</p>
     </div>
+    <input type="text" onkeypress="emitirAlerta()" id="exemplo" nome="exemplo" placeholder="Digite aqui...">
+    <button id="botaoAqui" onclick="emitirMensagem()"> Clique aqui</button>
     <a href="index.html">Clique aqui</a>
 </body>
 </html>

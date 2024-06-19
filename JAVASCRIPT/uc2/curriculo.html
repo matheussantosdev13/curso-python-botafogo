@@ -6,29 +6,92 @@
     <title>Seu Nome - Currículo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-color: #f0f0f0;
         }
         h1 {
             color: #333;
+            font-size: 32px;
+            text-decoration: underline;
         }
         .section {
             margin-bottom: 20px;
+            border: 2px dashed #666;
+            padding: 10px;
+            background-color: #fff;
         }
         .section h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
+            color: #666;
+            font-size: 24px;
         }
         .section p {
-            margin: 5px 0;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #444;
+        }
+        .section ul {
+            list-style-type: circle;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        strong {
+            color: #009688;
+            font-style: italic;
+        }
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        form {
+            max-width: 600px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Matheus Santos da Silva</h1>
-        <p>Desenvolvedor | Contato(21)98052-0866</p>
+        <p>Desenvolvedor | Contato (21) 98052-0866</p>
     </header>
 
     <section class="section">
@@ -44,7 +107,7 @@
 
     <section class="section">
         <h2>Experiência Profissional</h2>
-        <p><strong>Google</strong> - Estagio de Programacao | Período (01/2018 - 12/2020)</p>
+        <p><strong>Google</strong> - Estágio de Programação | Período (01/2018 - 12/2020)</p>
         <ul>
             <li>Ajuda na elaboração de planos de ação do setor</li>
             <li>Auxílio help desk como suporte para outros funcionários</li>
@@ -70,5 +133,26 @@
 
     <section class="section">
         <h2>Educação</h2>
-        <p><strong>Senac</strong> - Analise e Desenvolvimento de Sistemas | 2020</p>
-        <a href="index.html">Clique aqui</a>
+        <p><strong>Senac</strong> - Análise e Desenvolvimento de Sistemas | 2020</p>
+        <a href="index.html">Clique aqui</a> para mais detalhes sobre minha formação.
+    </section>
+
+    <section class="section">
+        <h2>Contato</h2>
+        <form action="processa_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="button" value="limpar">
+            <button type="button"> Cancelar</button>
+        </form>
+    </section>
+</body>
+</html>

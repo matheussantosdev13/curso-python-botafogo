@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Checkboxes</title>
+</head>
+<body>
+    <h2>Preferências de Contato</h2>
+    <form action="/submit-form" method="POST">
+        <p>Selecione suas preferências de contato:</p>
+        <input type="checkbox" id="email" name="contato" value="email">
+        <label for="email">Receber por Email</label><br>
+        <input type="checkbox" id="telefone" name="contato" value="telefone">
+        <label for="telefone">Receber por Telefone</label><br>
+        <input type="checkbox" id="correio" name="contato" value="correio">
+        <label for="correio">Receber por Correio</label><br>
+        <input type="checkbox" id="whatsapp" name="contato" value="whatsapp">
+        <label for="whatsapp">Receber por WhatsApp</label><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

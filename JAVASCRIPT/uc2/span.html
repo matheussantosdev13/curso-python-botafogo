@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com <span></span></title>
+</head>
+<body>
+
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      
+      <div>
+        <span>
+          <label for="nome">Nome:</label>
+        </span>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div>
+        <span>
+          <label for="email">Email:</label>
+        </span>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div>
+        <span>
+          <label for="idade">Idade:</label>
+        </span>
+        <input type="number" id="idade" name="idade">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferências</legend>
+
+      <div>
+        <span>
+          <label for="cor-preferida">Cor Preferida:</label>
+        </span>
+        <input type="text" id="cor-preferida" name="cor-preferida">
+      </div>
+
+      <div>
+        <span>
+          <label for="comentario">Comentário:</label>
+        </span>
+        <textarea id="comentario" name="comentario" rows="4"></textarea>
+      </div>
+
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
